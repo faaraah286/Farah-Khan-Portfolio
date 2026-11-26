@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farah Khan, CFA | MBA Finance — Investment & Valuation Analyst</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f9fd;
+      color: #1e3a5f;
+      overflow-x: hidden;
+    }
+    .serif { font-family: 'Playfair Display', serif; }
+    .ice-card {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(12px);
+      border: 1px solid #d4e6f6;
+      box-shadow: 0 10px 30px -10px rgba(30, 80, 130, 0.08);
+    }
+    .ice-tint {
+      background: linear-gradient(135deg, #e6f2fc 0%, #f0f8ff 100%);
+      border: 1px solid #c5dff5;
+    }
+    .ice-glow {
+      box-shadow: 0 12px 32px rgba(56, 145, 214, 0.16);
+    }
+    input[type="range"] { accent-color: #2b7bba; }
+  </style>
+</head>
+<body class="antialiased selection:bg-sky-200 selection:text-sky-950">
+
+  <!-- TOP COMPLIANCE BAR -->
+  <div class="bg-[#e3f0fb] border-b border-sky-200 text-center py-2 px-4 text-xs text-sky-900 font-medium">
+    Personal Professional Portfolio • Non-Advisory & Educational Demonstration Only (Aligned with UAE SCA Guidelines)
+  </div>
+
+  <!-- STICKY NAVIGATION -->
+  <nav class="sticky top-0 z-50 bg-white/85 backdrop-blur-md border-b border-sky-100">
+    <div class="max-w-5xl mx-auto px-6 py-3.5 flex items-center justify-between">
+      <div class="font-semibold tracking-wide text-[#1a436e] text-sm md:text-base">
+        FARAH KHAN, CFA <span class="text-sky-600 font-normal text-xs ml-1.5 hidden sm:inline">• MBA Finance | Abu Dhabi</span>
+      </div>
+      <div class="flex items-center gap-5 text-xs md:text-sm text-sky-900 font-medium">
+        <a href="#story" class="hover:text-sky-600 transition">My Story</a>
+        <a href="#expertise" class="hover:text-sky-600 transition">Expertise</a>
+        <a href="#sandbox" class="hover:text-sky-600 transition">Interactive Model</a>
+        <a href="#vault" class="bg-[#2b7bba] hover:bg-[#22669c] text-white font-semibold px-4 py-1.5 rounded-full transition shadow-sm">
+          Work Samples Vault
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CHAPTER 1: HERO & PORTRAIT -->
+  <section id="hero" class="py-16 sm:py-24 px-6 max-w-5xl mx-auto">
+    <div class="grid md:grid-cols-12 gap-10 items-center">
+      <!-- Left Text -->
+      <div class="md:col-span-7 hero-stagger space-y-5">
+        <div class="inline-block px-3.5 py-1 rounded-full bg-sky-100 border border-sky-200 text-sky-800 text-xs font-semibold tracking-wide">
+          Abu Dhabi, United Arab Emirates
+        </div>
+
+        <h1 class="serif text-4xl sm:text-5xl font-bold text-[#163a5f] leading-tight">
+          Farah Khan, CFA
+        </h1>
+        <p class="text-lg sm:text-xl text-[#2b7bba] font-semibold">
+          MBA Finance • Investment & Valuation Analyst
+        </p>
+
+        <p class="serif italic text-lg text-sky-800/90 border-l-4 border-sky-400 pl-4 py-1">
+          “Numbers tell a clear story—when you look past the headlines and examine the cash flows underneath.”
+        </p>
+
+        <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+          7+ years of experience connecting institutional equity research with real-world capital allocation, corporate valuation, and financial modeling across public markets and UAE operating businesses.
+        </p>
+
+        <div class="pt-3 flex flex-wrap gap-3.5">
+          <a href="#story" class="px-6 py-3 rounded-full bg-white hover:bg-sky-50 border border-sky-200 text-sm font-semibold text-[#1e4e79] transition shadow-sm">
+            Read My Journey ↓
+          </a>
+          <a href="#vault" class="px-6 py-3 rounded-full bg-[#2b7bba] hover:bg-[#22669c] text-white text-sm font-semibold transition ice-glow">
+            Request Work Samples
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Portrait + Editorial Pencil-Chart Art -->
+      <div class="md:col-span-5 hero-stagger flex flex-col items-center">
+        <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-3xl ice-card p-3 ice-glow">
+          <div class="w-full h-full rounded-2xl overflow-hidden bg-gradient-to-br from-sky-100 to-blue-200 flex items-center justify-center relative">
+            <!-- Upload your photo as profile.jpg in GitHub to replace fallback monogram automatically -->
+            <img src="profile.jpg" alt="Farah Khan, CFA"
+                 onerror="this.style.display='none'; document.getElementById('fallback-monogram').style.display='flex';"
+                 class="w-full h-full object-cover" />
+            <div id="fallback-monogram" style="display:none;" class="flex-col items-center justify-center text-center p-4">
+              <span class="serif text-5xl font-bold text-[#2b7bba]">FK</span>
+              <span class="text-[11px] text-sky-700 mt-2 font-medium">Upload profile.jpg to display photo</span>
+            </div>
+          </div>
+
+          <!-- Floating Pencil-Drawing-Chart Editorial Badge -->
+          <div class="absolute -bottom-5 -left-5 bg-white border border-sky-200 rounded-2xl px-4 py-2.5 shadow-md flex items-center gap-3">
+            <!-- Custom SVG: Pencil Sketching a Financial Chart -->
+            <svg width="34" height="34" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="10" fill="#e6f2fc"/>
+              <path d="M7 26H29" stroke="#5b9bd5" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M9 22L14 17L19 19.5L26 11" stroke="#2b7bba" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="14" cy="17" r="2" fill="#2b7bba"/>
+              <circle cx="19" cy="19.5" r="2" fill="#2b7bba"/>
+              <!-- Pencil -->
+              <path d="M23.5 8.5L27.5 12.5L21 19H17V15L23.5 8.5Z" fill="#f59e0b" stroke="#b45309" stroke-width="1.3" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <div class="text-xs font-bold text-[#163a5f]">Bottom-Up Craft</div>
+              <div class="text-[11px] text-sky-700">DCF • LBO • Unit Economics</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 2: THE EXPERIENCE STORY -->
+  <section id="story" class="py-20 px-6 bg-white/75 border-y border-sky-100">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-14 scroll-fade">
+        <span class="text-sky-600 text-xs font-bold uppercase tracking-widest">Chapter I • Experience Story</span>
+        <h2 class="serif text-3xl sm:text-4xl font-bold text-[#163a5f] mt-2">From Public Market Research to Real-World Capital Decisions</h2>
+      </div>
+
+      <div class="space-y-8 relative before:absolute before:inset-y-0 before:left-5 sm:before:left-7 before:w-0.5 before:bg-sky-200">
+        <!-- Act I -->
+        <div class="scroll-fade relative pl-14 sm:pl-20">
+          <div class="absolute left-2 sm:left-4 top-1 w-7 h-7 rounded-full bg-[#2b7bba] text-white text-xs font-bold flex items-center justify-center shadow">1</div>
+          <div class="ice-card rounded-2xl p-6 sm:p-8">
+            <div class="text-xs font-bold text-sky-600 uppercase tracking-wider mb-1">Act I • S&P Global Market Intelligence</div>
+            <h3 class="serif text-xl font-bold text-[#163a5f] mb-3">Learning How Markets Read Numbers</h3>
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+              My career began at <strong>S&P Global Market Intelligence</strong>, working closely on institutional equity and banking research across <strong>Asian and European markets</strong>. Every day, I examined financial statements, capital ratios, and corporate filings that global portfolio managers relied on to make investment decisions. That experience taught me a simple habit that still guides my work today: never take headline numbers at face value—always check the footnotes and cash flows underneath.
+            </p>
+          </div>
+        </div>
+
+        <!-- Act II -->
+        <div class="scroll-fade relative pl-14 sm:pl-20">
+          <div class="absolute left-2 sm:left-4 top-1 w-7 h-7 rounded-full bg-[#2b7bba] text-white text-xs font-bold flex items-center justify-center shadow">2</div>
+          <div class="ice-card rounded-2xl p-6 sm:p-8">
+            <div class="text-xs font-bold text-sky-600 uppercase tracking-wider mb-1">Act II • E-Commerce & Abu Dhabi Healthcare</div>
+            <h3 class="serif text-xl font-bold text-[#163a5f] mb-3">Inside Real Businesses & Startup Capital Allocation</h3>
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed mb-3">
+              After building a strong foundation in public market research, I stepped inside operating businesses—first in e-commerce, and then in <strong>Abu Dhabi’s healthcare sector</strong>, where I worked directly with a founder on real capital allocation decisions. Before launch, we compared two competing startup options—a <strong>retail pharmacy versus a café</strong>—by modeling upfront costs, licensing rules, and expected returns to decide where limited capital would be safest and most productive.
+            </p>
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+              Once we chose the pharmacy, local Abu Dhabi rules meant operating strictly on cash during the first year before qualifying for insurance networks. I modeled footfall, competitor pricing, and medication margins to pick a location that could break even on cash sales alone, and later structured supplier credit terms to free up working capital. As Year 2 insurance eligibility approached, I evaluated local insurance plans—weighing reimbursement discounts and payout delays against patient demand—so the business only signed contracts that genuinely added value.
+            </p>
+          </div>
+        </div>
+
+        <!-- Act III -->
+        <div class="scroll-fade relative pl-14 sm:pl-20">
+          <div class="absolute left-2 sm:left-4 top-1 w-7 h-7 rounded-full bg-[#2b7bba] text-white text-xs font-bold flex items-center justify-center shadow">3</div>
+          <div class="ice-card rounded-2xl p-6 sm:p-8">
+            <div class="text-xs font-bold text-sky-600 uppercase tracking-wider mb-1">Act III • CFA Charter & MBA Finance</div>
+            <h3 class="serif text-xl font-bold text-[#163a5f] mb-3">Bringing Research Rigor and Operating Judgment Together</h3>
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed">
+              Today, backed by an <strong>MBA in Finance (4.0 CGPA)</strong> and the <strong>CFA Charter</strong>, I combine both worlds—the disciplined valuation methods of an equity research analyst and the practical judgment of someone who has seen how businesses actually make, protect, and reinvest cash.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 3: CORE EXPERTISE ONE BY ONE -->
+  <section id="expertise" class="py-20 px-6 max-w-5xl mx-auto">
+    <div class="text-center mb-12 scroll-fade">
+      <span class="text-sky-600 text-xs font-bold uppercase tracking-widest">Chapter II • Core Expertise</span>
+      <h2 class="serif text-3xl sm:text-4xl font-bold text-[#163a5f] mt-2">Four Pillars of My Financial Craft</h2>
+      <p class="text-slate-600 text-sm mt-2">Revealed step-by-step as you explore my analytical toolkit.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      <!-- Skill 1 -->
+      <div class="skill-card ice-card rounded-2xl p-7 hover:border-sky-400 transition">
+        <div class="flex items-center justify-between mb-3">
+          <span class="px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold">01 • Valuation</span>
+          <span class="text-sky-500 text-lg">📐</span>
+        </div>
+        <h3 class="text-lg font-bold text-[#163a5f] mb-2">3-Statement DCF & Intrinsic Valuation</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Building integrated financial forecasts from the ground up—incorporating IFRS 16 lease schedules, working capital cycles, 3M EIBOR benchmarks, and regional tax rules (9% UAE Corporate Tax & 15% OECD Pillar Two).
+        </p>
+      </div>
+
+      <!-- Skill 2 -->
+      <div class="skill-card ice-card rounded-2xl p-7 hover:border-sky-400 transition">
+        <div class="flex items-center justify-between mb-3">
+          <span class="px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold">02 • Private Equity</span>
+          <span class="text-sky-500 text-lg">🏛️</span>
+        </div>
+        <h3 class="text-lg font-bold text-[#163a5f] mb-2">Buyout Structuring & Debt Waterfalls</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Underwriting transactions on a Pre-IFRS 16 cash basis, structuring Shariah-compliant Murabaha and Sukuk debt tranches, modeling cash sweeps, and evaluating bolt-on acquisition synergies.
+        </p>
+      </div>
+
+      <!-- Skill 3 -->
+      <div class="skill-card ice-card rounded-2xl p-7 hover:border-sky-400 transition">
+        <div class="flex items-center justify-between mb-3">
+          <span class="px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold">03 • Capital Allocation</span>
+          <span class="text-sky-500 text-lg">⚖️</span>
+        </div>
+        <h3 class="text-lg font-bold text-[#163a5f] mb-2">Feasibility, Unit Economics & Working Capital</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Evaluating competing startup investments (IRR/ROI), modeling cash-only breakeven thresholds, optimizing supplier credit terms, and assessing commercial payer/insurance contracts for true net profitability.
+        </p>
+      </div>
+
+      <!-- Skill 4 -->
+      <div class="skill-card ice-card rounded-2xl p-7 hover:border-sky-400 transition">
+        <div class="flex items-center justify-between mb-3">
+          <span class="px-3 py-1 rounded-full bg-sky-100 text-sky-800 text-xs font-bold">04 • Analytical Tools</span>
+          <span class="text-sky-500 text-lg">📊</span>
+        </div>
+        <h3 class="text-lg font-bold text-[#163a5f] mb-2">Financial Modeling, Python & Institutional Data</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Combining advanced Excel financial modeling with Python (Pandas, NumPy, Streamlit interactive simulators), SQL databases, and Bloomberg Terminal workflows to turn raw filings into clear decisions.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 4: INTERACTIVE METHODOLOGY SANDBOX -->
+  <section id="sandbox" class="py-20 px-6 bg-[#eaf4fc] border-y border-sky-200/80">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-10 scroll-fade">
+        <span class="text-sky-700 text-xs font-bold uppercase tracking-widest">Chapter III • Interactive Sandbox</span>
+        <h2 class="serif text-3xl sm:text-4xl font-bold text-[#163a5f] mt-2">Hypothetical Debt Paydown Explorer</h2>
+        <p class="text-slate-600 text-sm mt-2 max-w-2xl mx-auto">
+          Adjust the sliders to observe how starting leverage, benchmark profit rates (EIBOR), and operating growth affect a 5-year hypothetical cash sweep. <em>(Purely illustrative technical demonstration—no real securities referenced.)</em>
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-12 gap-8 items-center ice-card rounded-3xl p-6 sm:p-8">
+        <!-- Controls -->
+        <div class="md:col-span-5 space-y-6">
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-2">
+              <span class="text-slate-700">Opening Leverage (x EBITDA)</span>
+              <span id="lev-val" class="text-[#2b7bba] font-bold">4.0x</span>
+            </div>
+            <input type="range" id="lev-slider" min="2.5" max="5.5" step="0.5" value="4.0" class="w-full cursor-pointer" oninput="updateModel()">
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-2">
+              <span class="text-slate-700">Benchmark Rate / 3M EIBOR (%)</span>
+              <span id="eibor-val" class="text-[#2b7bba] font-bold">4.25%</span>
+            </div>
+            <input type="range" id="eibor-slider" min="2.50" max="6.50" step="0.25" value="4.25" class="w-full cursor-pointer" oninput="updateModel()">
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-2">
+              <span class="text-slate-700">Annual EBITDA Growth (%)</span>
+              <span id="growth-val" class="text-[#2b7bba] font-bold">8.0%</span>
+            </div>
+            <input type="range" id="growth-slider" min="4.0" max="14.0" step="1.0" value="8.0" class="w-full cursor-pointer" oninput="updateModel()">
+          </div>
+
+          <div class="pt-3 border-t border-sky-100 flex justify-between items-center">
+            <span class="text-xs font-medium text-slate-600">Projected Year-5 Leverage:</span>
+            <span id="y5-lev" class="text-xl font-bold text-emerald-600">0.85x</span>
+          </div>
+        </div>
+
+        <!-- Visual Chart -->
+        <div class="md:col-span-7">
+          <div class="text-xs font-medium text-slate-500 mb-3 flex justify-between">
+            <span>5-Year Debt Trajectory (Hypothetical Units)</span>
+            <span class="text-[#2b7bba] font-semibold">100% Excess Cash Sweep</span>
+          </div>
+          <div id="bars-container" class="grid grid-cols-6 gap-3 items-end h-52 pt-6 px-3 bg-[#f4f9fd] rounded-2xl border border-sky-200/80">
+            <!-- Bars populated by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 5: PRIVATE WORK SAMPLES VAULT -->
+  <section id="vault" class="py-20 px-6 max-w-4xl mx-auto text-center">
+    <div class="scroll-fade ice-card rounded-3xl p-8 sm:p-12 border-2 border-sky-200 ice-glow space-y-6">
+      <div class="w-14 h-14 mx-auto rounded-2xl bg-sky-100 border border-sky-200 flex items-center justify-center text-2xl">
+        🔒
+      </div>
+      <span class="text-sky-700 text-xs font-bold uppercase tracking-widest block">Chapter IV • Restricted Access</span>
+      <h2 class="serif text-3xl sm:text-4xl font-bold text-[#163a5f]">Private Work Samples Vault</h2>
+      <p class="text-slate-600 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+        To maintain professional standards and comply with UAE regulatory guidelines, full financial models and case studies are kept in a private folder and shared individually upon request.
+      </p>
+
+      <div class="grid sm:grid-cols-2 gap-4 text-left max-w-2xl mx-auto pt-2">
+        <div class="p-4 rounded-2xl ice-tint">
+          <div class="text-[#2b7bba] text-xs font-bold mb-1">WORK SAMPLE 01</div>
+          <div class="text-sm font-bold text-[#163a5f]">GCC Healthcare Take-Private LBO</div>
+          <div class="text-xs text-slate-600 mt-1">3-Statement LBO Model, 5-Page Investment Memo & Interactive Simulator.</div>
+        </div>
+        <div class="p-4 rounded-2xl ice-tint">
+          <div class="text-[#2b7bba] text-xs font-bold mb-1">WORK SAMPLE 02</div>
+          <div class="text-sm font-bold text-[#163a5f]">GCC Consumer Multi-Stage DCF</div>
+          <div class="text-xs text-slate-600 mt-1">IFRS 16 Lease Schedules, WACC Calibration & Regional Tax Modeling.</div>
+        </div>
+      </div>
+
+      <div class="pt-3">
+        <a href="https://forms.gle/jo6BuVzJLSyHGg5R9" target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#2b7bba] hover:bg-[#22669c] text-white font-bold text-sm sm:text-base transition shadow-md">
+          <span>Request Access to Private Vault</span>
+          <span>↗</span>
+        </a>
+      </div>
+
+      <div class="pt-4 border-t border-sky-100 text-left">
+        <p class="text-[11px] text-slate-500 leading-relaxed">
+          <strong class="text-slate-700">Regulatory & Non-Advisory Disclaimer:</strong> This website is a personal professional portfolio created solely to showcase financial modeling, valuation, and analytical capabilities. Nothing on this website or inside the private vault constitutes financial advice, investment advisory services, brokerage, portfolio management, or a public financial promotion/recommendation under UAE Securities and Commodities Authority (SCA) regulations.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-10 px-6 bg-white border-t border-sky-100 text-center text-xs text-slate-500 space-y-3">
+    <div class="flex flex-wrap justify-center gap-5 text-[#1e4e79] font-semibold">
+      <a href="https://www.linkedin.com/in/farah-khan-5031bb288" target="_blank" class="hover:text-sky-600 transition">LinkedIn Profile</a>
+      <span>•</span>
+      <a href="mailto:faaraah.286@gmail.com" class="hover:text-sky-600 transition">faaraah.286@gmail.com</a>
+      <span>•</span>
+      <span>Abu Dhabi, United Arab Emirates</span>
+    </div>
+    <p>© 2026 Farah Khan, CFA. All rights reserved.</p>
+  </footer>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Hero smooth entrance
+    gsap.from(".hero-stagger", {
+      y: 24,
+      opacity: 0,
+      duration: 0.85,
+      stagger: 0.15,
+      ease: "power2.out"
+    });
+
+    // Story & section scroll reveals
+    gsap.utils.toArray(".scroll-fade").forEach((el) => {
+      gsap.from(el, {
+        scrollTrigger: { trigger: el, start: "top 85%" },
+        y: 28,
+        opacity: 0,
+        duration: 0.75,
+        ease: "power2.out"
+      });
+    });
+
+    // One-by-one skill card reveal
+    gsap.from(".skill-card", {
+      scrollTrigger: { trigger: "#expertise", start: "top 80%" },
+      y: 30,
+      opacity: 0,
+      duration: 0.7,
+      stagger: 0.18,
+      ease: "power2.out"
+    });
+
+    // Interactive Debt Paydown Sandbox
+    function updateModel() {
+      const lev = parseFloat(document.getElementById("lev-slider").value);
+      const eibor = parseFloat(document.getElementById("eibor-slider").value);
+      const growth = parseFloat(document.getElementById("growth-slider").value) / 100;
+
+      document.getElementById("lev-val").innerText = lev.toFixed(1) + "x";
+      document.getElementById("eibor-val").innerText = eibor.toFixed(2) + "%";
+      document.getElementById("growth-val").innerText = (growth * 100).toFixed(1) + "%";
+
+      let ebitda = 1000;
+      let debt = ebitda * lev;
+      const startDebt = debt;
+      const rate = (eibor + 2.75) / 100;
+      const history = [{ label: "Start", debt: debt }];
+
+      for (let y = 1; y <= 5; y++) {
+        ebitda = ebitda * (1 + growth);
+        const interest = debt * rate;
+        const taxes = Math.max(0, (ebitda - ebitda * 0.25 - interest) * 0.09);
+        const capexAndNwc = ebitda * 0.30;
+        const fcf = Math.max(0, ebitda - interest - taxes - capexAndNwc);
+        debt = Math.max(0, debt - fcf);
+        history.push({ label: "Yr " + y, debt: debt });
+      }
+
+      document.getElementById("y5-lev").innerText = (debt / ebitda).toFixed(2) + "x";
+
+      const container = document.getElementById("bars-container");
+      container.innerHTML = history.map(item => {
+        const pct = Math.max(8, Math.round((item.debt / startDebt) * 100));
+        return `
+          <div class="flex flex-col items-center h-full justify-end pb-2">
+            <span class="text-[10px] text-[#1e4e79] font-bold mb-1">${Math.round(item.debt)}</span>
+            <div style="height: ${pct}%" class="w-full max-w-[36px] rounded-t-lg bg-gradient-to-t from-[#2b7bba] to-[#6cb4ee] transition-all duration-300 shadow-sm"></div>
+            <span class="text-[10px] text-slate-600 font-medium mt-1.5">${item.label}</span>
+          </div>
+        `;
+      }).join("");
+    }
+
+    updateModel();
+  </script>
+</body>
+</html>
