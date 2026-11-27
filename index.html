@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farah Khan, CFA • MBA Finance | Investment & Valuation Analyst</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ivory: #FAF7F2;
+      --ivory-card: #FFFFFF;
+      --emerald: #14453D;
+      --emerald-dark: #0D302A;
+      --emerald-soft: #E8F0EE;
+      --gold: #B47B2B;
+      --gold-soft: #F7EFE2;
+      --ink: #1C2523;
+      --muted: #52605D;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--ivory);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+    .serif {
+      font-family: 'Playfair Display', serif;
+    }
+    .canva-card {
+      background: var(--ivory-card);
+      border: 1px solid rgba(20, 69, 61, 0.12);
+      box-shadow: 0 18px 45px -15px rgba(20, 69, 61, 0.08);
+    }
+    .arch-frame {
+      border-radius: 180px 180px 28px 28px;
+      border: 4px solid #FFFFFF;
+      box-shadow: 0 22px 50px -12px rgba(20, 69, 61, 0.18);
+    }
+    /* Animated Pencil Drawing */
+    @keyframes drawLine {
+      0% { stroke-dashoffset: 180; }
+      65%, 100% { stroke-dashoffset: 0; }
+    }
+    @keyframes movePencil {
+      0% { transform: translate(0px, 0px); }
+      25% { transform: translate(26px, -12px); }
+      45% { transform: translate(48px, -4px); }
+      65%, 100% { transform: translate(84px, -28px); }
+    }
+    .chart-path {
+      stroke-dasharray: 180;
+      stroke-dashoffset: 180;
+      animation: drawLine 4s ease-in-out infinite;
+    }
+    .pencil-group {
+      animation: movePencil 4s ease-in-out infinite;
+    }
+
+    /* 3D Open Hardcover Book Styles */
+    .book-cover-board {
+      background: linear-gradient(145deg, #174E45 0%, #0F3730 100%);
+      border-radius: 22px;
+      padding: 14px;
+      box-shadow: 0 28px 65px -15px rgba(15, 55, 48, 0.35), inset 0 1px 1px rgba(255,255,255,0.18);
+    }
+    .book-paper-left {
+      background: linear-gradient(to right, #F6F1E7 0%, #FDFBF7 88%, #EDE6D8 100%);
+      border-radius: 12px 2px 2px 12px;
+      box-shadow: inset -12px 0 22px -12px rgba(20, 69, 61, 0.18);
+    }
+    .book-paper-right {
+      background: linear-gradient(to left, #F6F1E7 0%, #FDFBF7 88%, #EDE6D8 100%);
+      border-radius: 2px 12px 12px 2px;
+      box-shadow: inset 12px 0 22px -12px rgba(20, 69, 61, 0.18);
+      transform-origin: left center;
+      transition: transform 0.55s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.35s ease;
+    }
+    .book-paper-mobile {
+      background: linear-gradient(to bottom, #FDFBF7 0%, #F7F2E8 100%);
+      border-radius: 14px;
+      box-shadow: inset 6px 0 14px -8px rgba(20, 69, 61, 0.2);
+      transition: transform 0.45s ease, opacity 0.3s ease;
+    }
+    .flipping-out {
+      transform: perspective(1400px) rotateY(-24deg) scale(0.985);
+      opacity: 0.35;
+    }
+    .page-curl {
+      background: linear-gradient(135deg, transparent 50%, rgba(180, 123, 43, 0.16) 52%, #EAE2D3 100%);
+      border-top-left-radius: 10px;
+      transition: all 0.25s ease;
+    }
+    .book-paper-right:hover .page-curl {
+      width: 38px;
+      height: 38px;
+    }
+
+    input[type="range"] {
+      accent-color: #14453D;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-emerald-900/15 selection:text-emerald-950">
+
+  <!-- UNIVERSAL COMPLIANCE BANNER -->
+  <div class="bg-[#14453D] text-[#FAF7F2] text-center py-2 px-4 text-xs tracking-wide">
+    Personal Professional Portfolio • Educational &amp; Analytical Demonstration Only (Non-Advisory)
+  </div>
+
+  <!-- STICKY NAVIGATION -->
+  <nav class="sticky top-0 z-50 bg-[#FAF7F2]/90 backdrop-blur-md border-b border-[#14453D]/10">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between">
+      <a href="#" class="serif font-semibold text-base sm:text-xl text-[#14453D] tracking-tight">
+        Farah Khan, CFA • MBA Finance
+      </a>
+      <div class="flex items-center gap-4 sm:gap-7 text-xs sm:text-sm font-medium text-[#52605D]">
+        <a href="#story-book" class="hover:text-[#14453D] transition">Story</a>
+        <a href="#expertise" class="hover:text-[#14453D] transition">Expertise</a>
+        <a href="#model-logic" class="hidden sm:inline hover:text-[#14453D] transition">Model Logic</a>
+        <a href="#vault" class="bg-[#14453D] hover:bg-[#0D302A] text-[#FAF7F2] px-4 py-2 rounded-full transition shadow-sm">
+          Private Vault
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CANVA-STYLE ILLUSTRATED PANORAMA HERO -->
+  <header class="pt-6 sm:pt-10 pb-16 px-5 sm:px-8 max-w-6xl mx-auto">
+    <!-- Panoramic Illustrated Banner -->
+    <div class="relative rounded-3xl overflow-hidden canva-card mb-10 bg-[#F3EDE2]">
+      <img src="hero-art.png" alt="Abu Dhabi Architecture and Financial Valuation Desk"
+           class="w-full h-48 sm:h-72 md:h-80 object-cover object-center" />
+      <div class="absolute inset-0 bg-gradient-to-t from-[#FAF7F2] via-transparent to-transparent opacity-60"></div>
+      <div class="absolute bottom-4 left-5 sm:bottom-6 sm:left-8 inline-flex items-center gap-2 bg-[#FAF7F2]/95 backdrop-blur-sm px-4 py-1.5 rounded-full border border-[#14453D]/15 text-xs font-medium text-[#14453D] shadow-sm">
+        <span class="w-2 h-2 rounded-full bg-[#B47B2B]"></span>
+        Investment &amp; Valuation Analyst • Abu Dhabi, UAE
+      </div>
+    </div>
+
+    <!-- Hero Content Grid: Impact Quote + Arch Portrait -->
+    <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+      <div class="lg:col-span-7 space-y-6">
+        <h1 class="serif text-3xl sm:text-5xl font-bold text-[#14453D] leading-tight">
+          Farah Khan, CFA • MBA Finance
+        </h1>
+
+        <blockquote class="serif italic text-xl sm:text-2xl text-[#1C2523] border-l-4 border-[#B47B2B] pl-5 py-1 leading-relaxed">
+          “Capital is a scarce resource; conviction is earned in the footnotes. I bridge institutional equity research with real-world capital allocation.”
+        </blockquote>
+
+        <p class="text-[#52605D] text-sm sm:text-base leading-relaxed">
+          With over seven years spanning institutional equity research at <strong class="text-[#1C2523] font-semibold">S&amp;P Global Market Intelligence</strong> and hands-on startup capital allocation in Abu Dhabi, I evaluate businesses from both sides of the table—combining disciplined financial modeling with practical operating judgment.
+        </p>
+
+        <div class="pt-2 flex flex-wrap gap-3.5">
+          <a href="#story-book" class="px-6 py-3 rounded-full bg-[#14453D] hover:bg-[#0D302A] text-[#FAF7F2] text-sm font-medium transition shadow-sm">
+            Open My Career Book ↓
+          </a>
+          <a href="#vault" class="px-6 py-3 rounded-full bg-white hover:bg-[#F7EFE2] text-[#14453D] border border-[#14453D]/20 text-sm font-medium transition">
+            Request Private Case Studies
+          </a>
+        </div>
+      </div>
+
+      <!-- Portrait Card + Animated Value Creation Sketch -->
+      <div class="lg:col-span-5 flex flex-col items-center relative">
+        <div class="w-64 sm:w-72 h-80 sm:h-96 overflow-hidden arch-frame bg-[#E8F0EE]">
+          <img src="Profile.jpg.png" alt="Farah Khan, CFA • MBA Finance"
+               class="w-full h-full object-cover object-top" />
+        </div>
+
+        <!-- Floating Editorial Card -->
+        <div class="canva-card rounded-2xl px-4 py-3 -mt-8 sm:-ml-24 z-10 flex items-center gap-4 bg-white/95 backdrop-blur-sm">
+          <div>
+            <div class="text-[11px] uppercase tracking-wider text-[#52605D] font-semibold">Valuation &amp; Cash Flow</div>
+            <div class="serif text-sm font-bold text-[#14453D]">Value Creation</div>
+          </div>
+          <svg width="110" height="44" viewBox="0 0 110 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="6" y1="38" x2="104" y2="38" stroke="#CBD5E1" stroke-width="1.5" stroke-linecap="round"/>
+            <path class="chart-path" d="M8 33 L34 22 L56 27 L92 9" stroke="#14453D" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <g class="pencil-group">
+              <polygon points="8,33 13,27 16,30" fill="#B47B2B"/>
+              <rect x="13" y="21" width="14" height="4.5" rx="1" transform="rotate(-38 13 21)" fill="#14453D"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- INTERACTIVE 3D OPEN HARDCOVER BOOK SECTION -->
+  <section id="story-book" class="py-16 sm:py-24 px-4 sm:px-8 bg-[#F3EDE2]/75 border-y border-[#14453D]/10">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-10 space-y-2">
+        <span class="text-xs font-semibold uppercase tracking-widest text-[#B47B2B]">Interactive Monograph</span>
+        <h2 class="serif text-3xl sm:text-4xl font-bold text-[#14453D]">My Career Story, Chapter by Chapter</h2>
+        <p class="text-xs sm:text-sm text-[#52605D]">
+          Flip through the pages below to explore how equity research rigor and real-world capital allocation shaped my approach.
+        </p>
+      </div>
+
+      <!-- Book Controls Bar -->
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-6 max-w-4xl mx-auto">
+        <div class="flex flex-wrap gap-2">
+          <button onclick="goToSpread(0)" id="tab-0" class="chapter-tab px-4 py-1.5 rounded-full text-xs font-semibold bg-[#14453D] text-[#FAF7F2] transition cursor-pointer">
+            Chapter I
+          </button>
+          <button onclick="goToSpread(1)" id="tab-1" class="chapter-tab px-4 py-1.5 rounded-full text-xs font-semibold bg-white text-[#14453D] border border-[#14453D]/20 hover:bg-[#E8F0EE] transition cursor-pointer">
+            Chapter II
+          </button>
+          <button onclick="goToSpread(2)" id="tab-2" class="chapter-tab px-4 py-1.5 rounded-full text-xs font-semibold bg-white text-[#14453D] border border-[#14453D]/20 hover:bg-[#E8F0EE] transition cursor-pointer">
+            Chapter III
+          </button>
+        </div>
+
+        <button onclick="toggleSound()" id="sound-btn" class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-white border border-[#14453D]/15 text-xs font-medium text-[#14453D] hover:bg-[#E8F0EE] transition cursor-pointer">
+          <span id="sound-icon">🔊</span>
+          <span id="sound-label">Page Sound: On</span>
+        </button>
+      </div>
+
+      <!-- DESKTOP TWO-PAGE OPEN HARDCOVER BOOK -->
+      <div class="hidden md:block max-w-4xl mx-auto">
+        <div class="book-cover-board relative">
+          <!-- Silk Bookmark Ribbon -->
+          <div class="absolute -top-2 right-14 w-5 h-12 bg-[#B47B2B] rounded-b-sm shadow-md z-20"></div>
+
+          <div class="grid grid-cols-2 min-h-[430px]">
+            <!-- LEFT PAGE -->
+            <div id="left-page" class="book-paper-left p-9 flex flex-col justify-between border-r border-[#14453D]/15">
+              <!-- Populated by JS -->
+            </div>
+
+            <!-- RIGHT PAGE (CLICKABLE TO TURN) -->
+            <div id="right-page" onclick="nextSpread()" title="Click to turn page"
+                 class="book-paper-right p-9 flex flex-col justify-between relative cursor-pointer select-none">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE SINGLE-PAGE HARDCOVER BOOK -->
+      <div class="md:hidden">
+        <div class="book-cover-board relative">
+          <div class="absolute -top-2 right-8 w-4 h-10 bg-[#B47B2B] rounded-b-sm shadow-md z-20"></div>
+          <div id="mobile-page" class="book-paper-mobile p-6 min-h-[380px] flex flex-col justify-between">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Navigation Buttons -->
+      <div class="flex items-center justify-center gap-4 mt-6">
+        <button onclick="prevSpread()" id="prev-btn" class="px-5 py-2 rounded-full bg-white border border-[#14453D]/20 text-xs font-semibold text-[#14453D] hover:bg-[#E8F0EE] disabled:opacity-40 transition cursor-pointer">
+          ← Previous Page
+        </button>
+        <span id="spread-indicator" class="text-xs font-medium text-[#52605D]">Spread 1 of 3</span>
+        <button onclick="nextSpread()" id="next-btn" class="px-5 py-2 rounded-full bg-[#14453D] text-xs font-semibold text-[#FAF7F2] hover:bg-[#0D302A] disabled:opacity-40 transition cursor-pointer">
+          Turn Page →
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE EXPERTISE (CANVA VISUAL CARDS) -->
+  <section id="expertise" class="py-20 px-5 sm:px-8 max-w-6xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+      <span class="text-xs font-semibold uppercase tracking-widest text-[#B47B2B]">Core Capabilities</span>
+      <h2 class="serif text-3xl sm:text-4xl font-bold text-[#14453D]">Analytical &amp; Deal Craft</h2>
+      <p class="text-xs sm:text-sm text-[#52605D]">Select a focus area below to inspect the frameworks and methodologies behind my work.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+      <button onclick="selectSkill(0)" id="skill-0" class="skill-btn text-left p-5 rounded-2xl bg-[#14453D] text-[#FAF7F2] transition shadow-md cursor-pointer">
+        <div class="text-[11px] uppercase tracking-wider text-[#E5C185] font-semibold mb-1">01 • Buyouts</div>
+        <div class="serif text-lg font-bold">Private Equity &amp; LBO</div>
+      </button>
+
+      <button onclick="selectSkill(1)" id="skill-1" class="skill-btn text-left p-5 rounded-2xl canva-card text-[#14453D] hover:bg-[#E8F0EE]/60 transition cursor-pointer">
+        <div class="text-[11px] uppercase tracking-wider text-[#B47B2B] font-semibold mb-1">02 • Valuation</div>
+        <div class="serif text-lg font-bold">3-Statement DCF &amp; Tax</div>
+      </button>
+
+      <button onclick="selectSkill(2)" id="skill-2" class="skill-btn text-left p-5 rounded-2xl canva-card text-[#14453D] hover:bg-[#E8F0EE]/60 transition cursor-pointer">
+        <div class="text-[11px] uppercase tracking-wider text-[#B47B2B] font-semibold mb-1">03 • Operations</div>
+        <div class="serif text-lg font-bold">Capital Allocation</div>
+      </button>
+
+      <button onclick="selectSkill(3)" id="skill-3" class="skill-btn text-left p-5 rounded-2xl canva-card text-[#14453D] hover:bg-[#E8F0EE]/60 transition cursor-pointer">
+        <div class="text-[11px] uppercase tracking-wider text-[#B47B2B] font-semibold mb-1">04 • Tooling</div>
+        <div class="serif text-lg font-bold">AI-Assisted Modeling</div>
+      </button>
+    </div>
+
+    <div id="skill-detail" class="canva-card rounded-3xl p-7 sm:p-10">
+      <!-- Populated by JS -->
+    </div>
+  </section>
+
+  <!-- INTERACTIVE FINANCIAL LOGIC SANDBOX -->
+  <section id="model-logic" class="py-20 px-5 sm:px-8 bg-[#E8F0EE]/55 border-y border-[#14453D]/10">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
+        <span class="text-xs font-semibold uppercase tracking-widest text-[#B47B2B]">Interactive Sandbox</span>
+        <h2 class="serif text-3xl sm:text-4xl font-bold text-[#14453D]">Hypothetical Debt Paydown Explorer</h2>
+        <p class="text-xs sm:text-sm text-[#52605D]">
+          Adjust opening leverage, benchmark interest rates, and operating growth to observe how cash flows de-lever a hypothetical business over five years.
+        </p>
+      </div>
+
+      <div class="canva-card rounded-3xl p-6 sm:p-10 grid md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-5 space-y-6">
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-2">
+              <span class="text-[#1C2523]">Opening Leverage (x EBITDA)</span>
+              <span id="lev-val" class="text-[#14453D]">4.0x</span>
+            </div>
+            <input type="range" id="lev-slider" min="2.5" max="5.5" step="0.5" value="4.0" class="w-full cursor-pointer" oninput="updateModel()">
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-2">
+              <span class="text-[#1C2523]">Benchmark Rate (%)</span>
+              <span id="rate-val" class="text-[#14453D]">4.25%</span>
+            </div>
+            <input type="range" id="rate-slider" min="2.50" max="6.50" step="0.25" value="4.25" class="w-full cursor-pointer" oninput="updateModel()">
+          </div>
+
+          <div>
+            <div class="flex justify-between text-xs font-semibold mb-2">
+              <span class="text-[#1C2523]">Annual EBITDA Growth (%)</span>
+              <span id="growth-val" class="text-[#14453D]">8.0%</span>
+            </div>
+            <input type="range" id="growth-slider" min="4.0" max="14.0" step="1.0" value="8.0" class="w-full cursor-pointer" oninput="updateModel()">
+          </div>
+
+          <div class="pt-4 border-t border-[#14453D]/10 flex justify-between items-center">
+            <span class="text-xs font-medium text-[#52605D]">Year-5 Net Leverage:</span>
+            <span id="y5-lev" class="serif text-2xl font-bold text-[#14453D]">0.85x</span>
+          </div>
+        </div>
+
+        <div class="md:col-span-7">
+          <div class="flex justify-between text-xs text-[#52605D] mb-3">
+            <span>5-Year Debt Trajectory (Hypothetical Units)</span>
+            <span class="font-semibold text-[#B47B2B]">100% Free Cash Flow Sweep</span>
+          </div>
+          <div id="bars-container" class="grid grid-cols-6 gap-3 items-end h-52 pt-6 px-3 rounded-2xl bg-[#FAF7F2] border border-[#14453D]/10">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIVATE WORK SAMPLES VAULT (WITH LIBRARY ILLUSTRATION) -->
+  <section id="vault" class="py-20 sm:py-24 px-5 sm:px-8 max-w-5xl mx-auto">
+    <div class="canva-card rounded-3xl overflow-hidden grid md:grid-cols-12 items-center">
+      <!-- Illustrated Library Study Nook -->
+      <div class="md:col-span-5 h-64 md:h-full bg-[#F3EDE2]">
+        <img src="vault-art.png" alt="Sunlit Library Study and Bound Financial Dossiers"
+             class="w-full h-full object-cover" />
+      </div>
+
+      <!-- Vault Details & Form CTA -->
+      <div class="md:col-span-7 p-7 sm:p-11 space-y-5">
+        <span class="inline-block px-3 py-1 rounded-full bg-[#F7EFE2] text-[#B47B2B] text-xs font-semibold uppercase tracking-wider">
+          Restricted Access • Private Vault
+        </span>
+        <h2 class="serif text-2xl sm:text-4xl font-bold text-[#14453D]">
+          Request Private Work Samples
+        </h2>
+        <p class="text-xs sm:text-sm text-[#52605D] leading-relaxed">
+          Full financial models, Investment Committee memos, and interactive simulators are stored in a private folder and shared individually upon request.
+        </p>
+
+        <div class="grid sm:grid-cols-2 gap-3.5 pt-1">
+          <div class="p-4 rounded-2xl bg-[#FAF7F2] border border-[#14453D]/10">
+            <div class="text-[11px] font-bold text-[#B47B2B] uppercase mb-1">Case Study 01</div>
+            <div class="text-sm font-bold text-[#14453D]">Healthcare Take-Private LBO</div>
+            <div class="text-xs text-[#52605D] mt-1">3-Statement LBO, 5-Page IC Memo &amp; Interactive Streamlit Simulator.</div>
+          </div>
+          <div class="p-4 rounded-2xl bg-[#FAF7F2] border border-[#14453D]/10">
+            <div class="text-[11px] font-bold text-[#B47B2B] uppercase mb-1">Case Study 02</div>
+            <div class="text-sm font-bold text-[#14453D]">Consumer Multi-Stage DCF</div>
+            <div class="text-xs text-[#52605D] mt-1">IFRS 16 Lease Schedules, WACC Calibration &amp; Tax Modeling.</div>
+          </div>
+        </div>
+
+        <div class="pt-2">
+          <a href="https://forms.gle/jo6BuVzJLSyHGg5R9" target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#14453D] hover:bg-[#0D302A] text-[#FAF7F2] font-semibold text-sm transition shadow-md">
+            <span>Request Vault Access via Form</span>
+            <span>↗</span>
+          </a>
+        </div>
+
+        <p class="text-[11px] text-[#52605D] leading-relaxed pt-3 border-t border-[#14453D]/10">
+          <strong class="text-[#1C2523]">Portfolio Notice:</strong> All financial models, case studies, and interactive tools shared through this site are educational demonstrations of financial modeling methodology only and do not constitute financial or investment advice.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLEAN FOOTER (ZERO PERSONAL EMAIL OR PHONE) -->
+  <footer class="py-10 px-5 border-t border-[#14453D]/10 text-center text-xs text-[#52605D] space-y-2.5">
+    <div class="flex justify-center items-center gap-4 font-semibold text-[#14453D]">
+      <a href="https://www.linkedin.com/in/farah-khan-5031bb288" target="_blank" rel="noopener noreferrer" class="hover:text-[#B47B2B] transition">
+        LinkedIn Profile
+      </a>
+      <span>•</span>
+      <span>Abu Dhabi, United Arab Emirates</span>
+    </div>
+    <p>© 2026 Farah Khan, CFA • MBA Finance. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Web Audio API Synthesized Paper Page-Turn Sound
+    let soundEnabled = true;
+    let audioCtx = null;
+
+    function playPageTurnSound() {
+      if (!soundEnabled) return;
+      try {
+        if (!audioCtx) {
+          audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        if (audioCtx.state === 'suspended') {
+          audioCtx.resume();
+        }
+        const duration = 0.28;
+        const bufferSize = Math.floor(audioCtx.sampleRate * duration);
+        const buffer = audioCtx.createBuffer(1, bufferSize, audioCtx.sampleRate);
+        const data = buffer.getChannelData(0);
+
+        for (let i = 0; i < bufferSize; i++) {
+          const t = i / bufferSize;
+          const envelope = Math.sin(t * Math.PI) * Math.pow(1 - t, 0.7);
+          data[i] = (Math.random() * 2 - 1) * envelope * 0.28;
+        }
+
+        const noise = audioCtx.createBufferSource();
+        noise.buffer = buffer;
+
+        const filter = audioCtx.createBiquadFilter();
+        filter.type = 'bandpass';
+        filter.frequency.setValueAtTime(900, audioCtx.currentTime);
+        filter.frequency.exponentialRampToValueAtTime(2400, audioCtx.currentTime + duration);
+        filter.Q.value = 1.4;
+
+        noise.connect(filter);
+        filter.connect(audioCtx.destination);
+        noise.start();
+      } catch (e) {}
+    }
+
+    function toggleSound() {
+      soundEnabled = !soundEnabled;
+      document.getElementById('sound-icon').innerText = soundEnabled ? '🔊' : '🔇';
+      document.getElementById('sound-label').innerText = soundEnabled ? 'Page Sound: On' : 'Page Sound: Muted';
+    }
+
+    // 3D Open Hardcover Book Data
+    let currentSpread = 0;
+
+    const spreads = [
+      {
+        left: `
+          <div class="space-y-4">
+            <div class="text-[11px] font-bold uppercase tracking-widest text-[#B47B2B]">Selected Monograph</div>
+            <h3 class="serif text-2xl font-bold text-[#14453D] leading-snug">
+              From Public Market Filings to Real-World Capital Decisions
+            </h3>
+            <p class="text-xs text-[#52605D] leading-relaxed">
+              Every financial statement tells two stories: the headline summary on page one, and the economic reality buried in the footnotes, working capital cycles, and lease commitments.
+            </p>
+            <div class="pt-3 space-y-2 border-t border-[#14453D]/10 text-xs">
+              <div class="flex justify-between"><span class="font-bold text-[#14453D]">Chapter I</span><span class="text-[#52605D]">Public Markets Research</span></div>
+              <div class="flex justify-between"><span class="font-bold text-[#14453D]">Chapter II</span><span class="text-[#52605D]">Operating Capital Allocation</span></div>
+              <div class="flex justify-between"><span class="font-bold text-[#14453D]">Chapter III</span><span class="text-[#52605D]">Institutional Synthesis</span></div>
+            </div>
+          </div>
+          <div class="flex justify-between items-center text-[11px] text-[#52605D] pt-4 border-t border-[#14453D]/10">
+            <span>Page 01 • Contents</span>
+            <span>Farah Khan, CFA</span>
+          </div>
+        `,
+        right: `
+          <div class="space-y-4">
+            <div class="flex justify-between items-center">
+              <span class="text-[11px] font-bold uppercase tracking-widest text-[#B47B2B]">Chapter I</span>
+              <span class="text-[11px] text-[#52605D]">Public Markets</span>
+            </div>
+            <h3 class="serif text-2xl font-bold text-[#14453D] leading-snug">
+              Learning How Markets Read Numbers
+            </h3>
+            <p class="text-xs sm:text-[13px] text-[#1C2523] leading-relaxed">
+              My career began at <strong>S&amp;P Global Market Intelligence</strong>, working closely on institutional equity and banking research across Asian and European markets.
+            </p>
+            <p class="text-xs sm:text-[13px] text-[#52605D] leading-relaxed">
+              Every day, I examined financial statements, capital ratios, and corporate filings that global portfolio managers relied on to make investment decisions. That experience taught me a simple habit that still guides my work today: never take headline numbers at face value—always check the footnotes and cash flows underneath.
+            </p>
+          </div>
+          <div class="flex justify-between items-center text-[11px] text-[#52605D] pt-4 border-t border-[#14453D]/10">
+            <span>Page 02</span>
+            <span class="font-semibold text-[#14453D]">Click page to turn →</span>
+          </div>
+          <div class="page-curl w-6 h-6 absolute bottom-0 right-0 pointer-events-none"></div>
+        `
+      },
+      {
+        left: `
+          <div class="space-y-4">
+            <div class="flex justify-between items-center">
+              <span class="text-[11px] font-bold uppercase tracking-widest text-[#B47B2B]">Chapter II</span>
+              <span class="text-[11px] text-[#52605D]">Operating Strategy</span>
+            </div>
+            <h3 class="serif text-2xl font-bold text-[#14453D] leading-snug">
+              Capital Allocation Inside Real Businesses
+            </h3>
+            <img src="book-art.png" alt="Cafe vs Pharmacy Capital Allocation Crossroads"
+                 class="w-full h-36 object-cover rounded-xl border border-[#14453D]/10" />
+            <p class="text-xs text-[#52605D] leading-relaxed">
+              Stepping from institutional terminals into e-commerce and Abu Dhabi’s healthcare sector meant making capital decisions under live regulatory and cash constraints.
+            </p>
+          </div>
+          <div class="flex justify-between items-center text-[11px] text-[#52605D] pt-4 border-t border-[#14453D]/10">
+            <span>Page 03</span>
+            <span>Abu Dhabi, UAE</span>
+          </div>
+        `,
+        right: `
+          <div class="space-y-3.5">
+            <div class="text-[11px] font-bold uppercase tracking-widest text-[#B47B2B]">Chapter II (Continued)</div>
+            <p class="text-xs text-[#1C2523] leading-relaxed">
+              Prior to launch, we compared two competing startup options—a <strong>retail pharmacy versus a café</strong>—by modeling upfront capital outlays, licensing rules, IRR, and ROI to decide where limited capital would be safest and most productive.
+            </p>
+            <p class="text-xs text-[#52605D] leading-relaxed">
+              Once we chose the pharmacy, Abu Dhabi rules meant operating strictly on cash during Year 1 before insurance eligibility. I modeled footfall sensitivity, competitor pricing, and medication margins to pick a cash-breakeven site, and later structured supplier credit terms to free up working capital.
+            </p>
+            <p class="text-xs text-[#52605D] leading-relaxed">
+              Ahead of Year 2 insurance onboarding, I weighed reimbursement discounts and payout delays against patient demand so the business only signed value-accretive contracts.
+            </p>
+          </div>
+          <div class="flex justify-between items-center text-[11px] text-[#52605D] pt-4 border-t border-[#14453D]/10">
+            <span>Page 04</span>
+            <span class="font-semibold text-[#14453D]">Click page to turn →</span>
+          </div>
+          <div class="page-curl w-6 h-6 absolute bottom-0 right-0 pointer-events-none"></div>
+        `
+      },
+      {
+        left: `
+          <div class="space-y-4">
+            <div class="flex justify-between items-center">
+              <span class="text-[11px] font-bold uppercase tracking-widest text-[#B47B2B]">Chapter III</span>
+              <span class="text-[11px] text-[#52605D]">Institutional Synthesis</span>
+            </div>
+            <h3 class="serif text-2xl font-bold text-[#14453D] leading-snug">
+              Research Discipline Meets Practical Judgment
+            </h3>
+            <p class="text-xs sm:text-[13px] text-[#1C2523] leading-relaxed">
+              Today, backed by an <strong>MBA in Finance (4.0 CGPA)</strong> and the <strong>CFA Charter</strong>, I combine both worlds—the disciplined valuation methods of an equity research analyst and the practical judgment of someone who has seen how businesses actually make and spend money.
+            </p>
+            <p class="text-xs text-[#52605D] leading-relaxed">
+              I also pair fundamental financial modeling with AI-assisted coding (Python, Streamlit, HTML) to turn static spreadsheets into interactive decision tools.
+            </p>
+          </div>
+          <div class="flex justify-between items-center text-[11px] text-[#52605D] pt-4 border-t border-[#14453D]/10">
+            <span>Page 05</span>
+            <span>Farah Khan, CFA</span>
+          </div>
+        `,
+        right: `
+          <div class="space-y-4">
+            <div class="text-[11px] font-bold uppercase tracking-widest text-[#B47B2B]">Guiding Principles</div>
+            <h3 class="serif text-xl font-bold text-[#14453D]">How I Evaluate Every Opportunity</h3>
+            <ul class="space-y-3 text-xs text-[#1C2523]">
+              <li class="p-3 rounded-xl bg-[#FAF7F2] border border-[#14453D]/10">
+                <strong class="text-[#14453D] block mb-0.5">1. Cash Conversion Over Headline Margin</strong>
+                Profit on paper only matters when converted into repeatable free cash flow.
+              </li>
+              <li class="p-3 rounded-xl bg-[#FAF7F2] border border-[#14453D]/10">
+                <strong class="text-[#14453D] block mb-0.5">2. Downside Protection First</strong>
+                Model regulatory delays, lease commitments, and rate shocks before chasing upside.
+              </li>
+            </ul>
+            <div class="pt-1">
+              <a href="#vault" class="inline-block text-xs font-bold text-[#14453D] underline underline-offset-4 hover:text-[#B47B2B]">
+                Explore Private Work Samples ↓
+              </a>
+            </div>
+          </div>
+          <div class="flex justify-between items-center text-[11px] text-[#52605D] pt-4 border-t border-[#14453D]/10">
+            <span>Page 06 • End</span>
+            <span>Click to restart ↺</span>
+          </div>
+        `
+      }
+    ];
+
+    function renderBook(animate = false) {
+      const rightPage = document.getElementById('right-page');
+      const mobilePage = document.getElementById('mobile-page');
+
+      if (animate) {
+        playPageTurnSound();
+        if (rightPage) rightPage.classList.add('flipping-out');
+        if (mobilePage) mobilePage.classList.add('flipping-out');
+      }
+
+      setTimeout(() => {
+        const s = spreads[currentSpread];
+        document.getElementById('left-page').innerHTML = s.left;
+        document.getElementById('right-page').innerHTML = s.right;
+        document.getElementById('mobile-page').innerHTML = `
+          <div class="space-y-5">
+            ${s.left}
+            <div class="border-t border-dashed border-[#14453D]/20 my-3"></div>
+            ${s.right}
+          </div>
+        `;
+
+        document.querySelectorAll('.chapter-tab').forEach((btn, idx) => {
+          if (idx === currentSpread) {
+            btn.className = 'chapter-tab px-4 py-1.5 rounded-full text-xs font-semibold bg-[#14453D] text-[#FAF7F2] transition cursor-pointer';
+          } else {
+            btn.className = 'chapter-tab px-4 py-1.5 rounded-full text-xs font-semibold bg-white text-[#14453D] border border-[#14453D]/20 hover:bg-[#E8F0EE] transition cursor-pointer';
+          }
+        });
+
+        document.getElementById('spread-indicator').innerText = `Spread ${currentSpread + 1} of ${spreads.length}`;
+        document.getElementById('prev-btn').disabled = currentSpread === 0;
+
+        if (rightPage) rightPage.classList.remove('flipping-out');
+        if (mobilePage) mobilePage.classList.remove('flipping-out');
+      }, animate ? 220 : 0);
+    }
+
+    function nextSpread() {
+      currentSpread = (currentSpread + 1) % spreads.length;
+      renderBook(true);
+    }
+
+    function prevSpread() {
+      if (currentSpread > 0) {
+        currentSpread--;
+        renderBook(true);
+      }
+    }
+
+    function goToSpread(idx) {
+      if (idx !== currentSpread) {
+        currentSpread = idx;
+        renderBook(true);
+      }
+    }
+
+    // Core Expertise Interactive Switcher
+    const skills = [
+      {
+        title: "Private Equity & Buyout Structuring",
+        desc: "Designing clean leveraged buyout frameworks tailored to regional acquisition finance and operating lease realities.",
+        points: [
+          "Pre-IFRS 16 vs. Post-IFRS 16 EBITDA normalization to isolate true operating cash generation.",
+          "Multi-tranche acquisition debt waterfalls combining senior amortizing facilities with subordinated notes.",
+          "Bolt-on acquisition roll-up modeling, synergy bridges, and Entry/Exit IRR sensitivity matrices."
+        ]
+      },
+      {
+        title: "Multi-Stage DCF & Corporate Tax Modeling",
+        desc: "Building integrated 3-statement operating forecasts calibrated to regional interest benchmarks and evolving tax frameworks.",
+        points: [
+          "Full Right-of-Use (ROU) asset depreciation and lease liability amortization schedules.",
+          "WACC calibration incorporating regional interbank rates, equity risk premiums, and unlevered sector betas.",
+          "Cash tax modeling across the 9% UAE Corporate Tax and 15% OECD Pillar Two regimes."
+        ]
+      },
+      {
+        title: "Startup Capital Allocation & Working Capital Strategy",
+        desc: "Applying institutional investment discipline to live commercial decisions, site selection, and contract negotiations.",
+        points: [
+          "Comparative IRR, ROI, and payback modeling across mutually exclusive startup opportunities.",
+          "Cash-only breakeven feasibility modeling under first-year regulatory constraints.",
+          "Supplier credit structuring and insurance network net-return evaluation."
+        ]
+      },
+      {
+        title: "Fundamental Research & AI-Assisted Interactive Tooling",
+        desc: "Pairing deep financial statement forensics with modern AI-assisted coding to turn static models into interactive decision tools.",
+        points: [
+          "Institutional equity and banking balance-sheet analysis grounded in S&P Global Market Intelligence rigor.",
+          "Translating financial model logic into interactive Python, Streamlit, and HTML sensitivity explorers.",
+          "Clear executive Investment Committee memos designed for rapid decision-making."
+        ]
+      }
+    ];
+
+    function selectSkill(idx) {
+      document.querySelectorAll('.skill-btn').forEach((btn, i) => {
+        if (i === idx) {
+          btn.className = 'skill-btn text-left p-5 rounded-2xl bg-[#14453D] text-[#FAF7F2] transition shadow-md cursor-pointer';
+          btn.querySelector('div').className = 'text-[11px] uppercase tracking-wider text-[#E5C185] font-semibold mb-1';
+        } else {
+          btn.className = 'skill-btn text-left p-5 rounded-2xl canva-card text-[#14453D] hover:bg-[#E8F0EE]/60 transition cursor-pointer';
+          btn.querySelector('div').className = 'text-[11px] uppercase tracking-wider text-[#B47B2B] font-semibold mb-1';
+        }
+      });
+
+      const s = skills[idx];
+      document.getElementById('skill-detail').innerHTML = `
+        <h3 class="serif text-2xl font-bold text-[#14453D] mb-2">${s.title}</h3>
+        <p class="text-xs sm:text-sm text-[#52605D] mb-5 leading-relaxed">${s.desc}</p>
+        <div class="grid md:grid-cols-3 gap-4">
+          ${s.points.map((pt, i) => `
+            <div class="p-4 rounded-2xl bg-[#FAF7F2] border border-[#14453D]/10 text-xs text-[#1C2523] leading-relaxed">
+              <span class="font-bold text-[#B47B2B] block mb-1">0${i + 1}</span>
+              ${pt}
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    // Hypothetical Debt Paydown Explorer
+    function updateModel() {
+      const lev = parseFloat(document.getElementById('lev-slider').value);
+      const ratePct = parseFloat(document.getElementById('rate-slider').value);
+      const growth = parseFloat(document.getElementById('growth-slider').value) / 100;
+
+      document.getElementById('lev-val').innerText = lev.toFixed(1) + 'x';
+      document.getElementById('rate-val').innerText = ratePct.toFixed(2) + '%';
+      document.getElementById('growth-val').innerText = (growth * 100).toFixed(1) + '%';
+
+      let ebitda = 1000;
+      let debt = ebitda * lev;
+      const startDebt = debt;
+      const allInRate = (ratePct + 2.50) / 100;
+      const history = [{ label: 'Close', debt: debt }];
+
+      for (let y = 1; y <= 5; y++) {
+        ebitda = ebitda * (1 + growth);
+        const interest = debt * allInRate;
+        const taxes = Math.max(0, (ebitda * 0.75 - interest) * 0.09);
+        const capexAndNwc = ebitda * 0.28;
+        const fcf = Math.max(0, ebitda - interest - taxes - capexAndNwc);
+        debt = Math.max(0, debt - fcf);
+        history.push({ label: 'Yr ' + y, debt: debt });
+      }
+
+      document.getElementById('y5-lev').innerText = (debt / ebitda).toFixed(2) + 'x';
+
+      document.getElementById('bars-container').innerHTML = history.map(item => {
+        const pct = Math.max(6, Math.round((item.debt / startDebt) * 100));
+        return `
+          <div class="flex flex-col items-center h-full justify-end pb-2">
+            <span class="text-[10px] font-bold text-[#14453D] mb-1">${Math.round(item.debt)}</span>
+            <div style="height: ${pct}%" class="w-full max-w-[34px] rounded-t-lg bg-gradient-to-t from-[#14453D] to-[#236B5E] transition-all duration-300"></div>
+            <span class="text-[10px] text-[#52605D] mt-1.5 font-medium">${item.label}</span>
+          </div>
+        `;
+      }).join('');
+    }
+
+    renderBook(false);
+    selectSkill(0);
+    updateModel();
+  </script>
+</body>
+</html>
